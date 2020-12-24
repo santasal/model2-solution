@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 1.75em;
+    margin: 20px;
+}
+
+/* Simple responsive framework */
+.row {
+    width: 100%;
+    padding: 0 15px;
+}
+
+/***** Large devices *****/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+/* Small devices */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%
+    }
+}
+
+/* Specific style */
+.dish-title{
+    float: right;
+    position: relative;
+    top:-1px;
+    left:1px;
+    padding: 5px 50px;
+    border:1px black solid;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+#dish-title-1{
+    background-color: #f08080;
+}
+#dish-title-2{
+    color: white;
+    background-color: firebrick;
+}
+#dish-title-3{
+    background-color: burlywood;
+}
+
+.dish{
+    position: relative;
+    background: #999999;
+    border: 1px solid;
+    margin: 20px;
+}
+
+.dish p {
+    clear: right;
+    padding: 10px;
+}
